@@ -5,6 +5,8 @@ using UnityEngine;
 //Move forward
 public class Bullet : MonoBehaviour
 {
+   
+
     private Rigidbody bulletRig;
 
     public float speed = 8f;
@@ -14,12 +16,14 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject, DestoryTime);
 
-        bulletRig = GetComponent<Rigidbody>();  
+        bulletRig = GetComponent<Rigidbody>();
+
+        bulletRig.velocity = this.transform.forward * speed;
     }
 
-  
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        bulletRig.velocity=this.transform.forward*speed;    
+      //  Destroy(gameObject);
     }
+
 }

@@ -348,9 +348,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/Bullet.cs"
+"Assets/Script/BulletSpawner.cs"
+"Assets/Script/GameManager.cs"
+"Assets/Script/PlayerHP.cs"
 "Assets/Script/Player_M.cs"
 "Assets/Script/Player_M2.cs"
 "Assets/Script/Rotator.cs"
+"Assets/Script/TartgetPlayer.cs"
+"Assets/Script/UIManager.cs"
+"Assets/Smart Turret Template/Scripts/STT_Actor.cs"
+"Assets/Smart Turret Template/Scripts/STT_Turret.cs"
 -langversion:9.0
 
 /deterministic
