@@ -10,6 +10,7 @@ public class PlayerHP : MonoBehaviour
 
     public float hp = 100f;
 
+    public GameManager gameManager;
 
     void Start()
     {
@@ -24,6 +25,16 @@ public class PlayerHP : MonoBehaviour
             hitEffect.Play();
 
             Destroy(collision.gameObject);
+
+            if (hp<=0)
+            {
+                if (!GameManager.isGameOver)
+                {
+                    GameManager.isGameOver = true;  
+                    gameManager.Record_End();
+                }
+
+            }
         }
     }
 

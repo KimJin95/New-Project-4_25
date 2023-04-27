@@ -7,10 +7,12 @@ public class UIManager : MonoBehaviour
 {
     public Text playerHp_Text;
     public PlayerHP playerHp;
+    public Text recordText;
+    public Text surviveTime_Text;
 
     void Start()
     {
-        
+        //PlayerPrefs.SetFloat("BestTime", 0f); 
     }
 
  
@@ -19,6 +21,7 @@ public class UIManager : MonoBehaviour
         if (playerHp.hp>=0)
         {
             playerHp_Text.text = "HP: " + playerHp.hp;
+            
         }
     }
 }
